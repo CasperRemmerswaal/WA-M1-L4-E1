@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Casper's Website </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1> Casper's Website</h1>
+        <hr>
+    </header>
+
+    <main>
+        <h2>Recept uploaden</h2>
+        <br />
+        <p>Indien je een recept met ons wilt delen, kan dat via onderstaand formulier</p>
+        <br />
+        <form name="recipe" method="POST" data-netlify="true">
+            <p>
+                <label>Naam: <br /> <input type="text" name="name" /></label>
+                <br />
+                <label>Email adres: <br /> <input type="email" name="email" /></label>
+                <br />
+                <label>Telefoonnummer: <br /> <input type="tel" name="number" /></label>
+                <br />
+                <label>Leeftijd: <br /> <input type="number" name="age" /></label>
+                <br />
+                <label>Geboortedatum: <br /> <input type="date" name="gebdat" /></label>
+                <br />
+                <label>Geslacht: <br />
+                    <input type="radio" name="gender" value="male" /> man <br />
+                    <input type="radio" name="gender" value="female" /> vrouw <br />
+                    <input type="radio" name="gender" value="other" /> anders
+                </label>
+                <br />
+                <label>Favoriete Cuisine: <br />
+                    <input type="checkbox" name="cuisine-fr" value="yes" /> Frans <br />
+                    <input type="checkbox" name="cuisine-it" value="yes" /> Italiaans <br />
+                    <input type="checkbox" name="cuisine-sp" value="yes" /> Spaans <br />
+                    <input type="checkbox" name="cuisine-ar" value="yes" /> Arabisch
+                </label>
+                <br />
+                <label>Lievelingskleur: <br /> <input type="color" name="color" /></label>
+                <br />
+                <label>Biografie: <br /> <textarea name="Bio" rows="4" cols="20"></textarea></label>
+                <br />
+                <label>Recept: <br /> <input type="file" name="recept" /></label>
+                <br />
+                <label>Jouw eigen website <br /> <input type="url" name="chefsite" /></label>
+                <br />
+                <br />
+                <button type="reset">Reset</button>
+                <button type="submit">Verzenden</button>
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li class="hor"><a href="index.html">Home</a></li>
+                <li class="hor"><a href="blog.html">Blog</a></li>
+                <li class="hor"><a href="about.html">About Me</a></li>  
+                <li class="hor"><a href="contact.html">Contact</a></li>
+                <li class="hor"><a href="recept.html">Recept uploaden</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
